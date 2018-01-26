@@ -3,8 +3,8 @@ Algorithm=input()
 if Algorithm == 'merge sort':
     pygame.init()
     pygame.font.init()
-    p = pygame.display.set_mode((800,600))
-    p.fill((255,255,255))
+    screen = pygame.display.set_mode((800,600))
+    screen.fill((255,255,255))
 
     L1=445
     W1=495
@@ -16,7 +16,7 @@ if Algorithm == 'merge sort':
         def __init__(self,side):
 
             self.side= 50
-            pygame.draw.rect(p,(200,200,200),(L1,W1,H,H))
+            pygame.draw.rect(screen,(200,200,200),(L1,W1,H,H))
 
     L2=345
     W2=495
@@ -24,7 +24,7 @@ if Algorithm == 'merge sort':
     class square_2:
         def __init__(self,side):
             self.side= 50
-            pygame.draw.rect(p,(150,150,150),(L2,W2,H,H))
+            pygame.draw.rect(screen,(150,150,150),(L2,W2,H,H))
 
 
     L3=395
@@ -34,7 +34,7 @@ if Algorithm == 'merge sort':
     class square_3:
         def __init__(self,side):
             self.side= 50
-            pygame.draw.rect(p,(100,100,100),(L3,W3,H,H))
+            pygame.draw.rect(screen,(100,100,100),(L3,W3,H,H))
 
     L4=295
     W4=495
@@ -42,23 +42,23 @@ if Algorithm == 'merge sort':
     class square_4:
         def __init__(self,side):
             self.side= 50
-            pygame.draw.rect(p,(50,50,50),(L4,W4,H,H))
+            pygame.draw.rect(screen,(50,50,50),(L4,W4,H,H))
 
 
 
     
 
-    pygame.draw.circle(p,(0,0,0),(390,250),170,170)
+    pygame.draw.circle(screen,(0,0,0),(390,250),170,170)
 
     myfont = pygame.font.SysFont("Comic Sans MS", 50)
 
     label = myfont.render('Merge Sort',True,(250,250,250))
 
-    p.blit(label, (250, 200))
+    screen.blit(label, (250, 200))
     pygame.display.update()
     time.sleep(4)
 
-    p.fill((255,255,255))
+    screen.fill((255,255,255))
     
     square_1(10)
     square_2(10)
@@ -70,7 +70,7 @@ if Algorithm == 'merge sort':
 
     label = myfont.render('you see four squares on the screen',True,(0,0,0))
 
-    p.blit(label, (160, 400))
+    screen.blit(label, (160, 400))
     pygame.display.update()
 
 
@@ -79,7 +79,7 @@ if Algorithm == 'merge sort':
         
 
     for i in range(100):       
-        p.fill((255,255,255))
+        screen.fill((255,255,255))
         square_1(10)
         square_2(10)
         square_3(10)
@@ -99,14 +99,14 @@ if Algorithm == 'merge sort':
 
         label = myfont.render('now the four squares are devided into two couples',True,(0,0,0))
 
-        p.blit(label, (50, 250))
+        screen.blit(label, (50, 250))
         pygame.display.update()
 
        
     time.sleep(5)       
 
     for i in range(100):
-        p.fill((255,255,255))
+        screen.fill((255,255,255))
         square_1(1)
         square_3(2)
         square_4(1)
@@ -130,7 +130,7 @@ if Algorithm == 'merge sort':
 
         label = myfont.render('we will devide the two couples one by one',True,(0,0,0))
 
-        p.blit(label, (120, 200))
+        screen.blit(label, (120, 200))
         pygame.display.update()
 
 
@@ -140,7 +140,7 @@ if Algorithm == 'merge sort':
     time.sleep(4)
 
     for i in range(100):
-        p.fill((255,255,255))
+        screen.fill((255,255,255))
         square_1(1)
         square_2(2)
         square_3(3)
@@ -163,7 +163,7 @@ if Algorithm == 'merge sort':
 
         label = myfont.render('each side should be sorted separately',True,(0,0,0))
 
-        p.blit(label, (150, 300))
+        screen.blit(label, (150, 300))
         pygame.display.update()
 
 
@@ -172,7 +172,7 @@ if Algorithm == 'merge sort':
     time.sleep(4)
 
     for i in range(100):
-        p.fill((255,255,255))
+        screen.fill((255,255,255))
         square_1(1)
         square_2(2)
         square_3(3)
@@ -187,7 +187,7 @@ if Algorithm == 'merge sort':
 
     for i in range(100):
         
-        p.fill((255,255,255))
+        screen.fill((255,255,255))
         square_1(1)
         square_2(2)
         square_3(3)
@@ -201,7 +201,7 @@ if Algorithm == 'merge sort':
     time.sleep(2)
 
     for i in range(100):
-        p.fill((255,255,255))
+        screen.fill((255,255,255))
         square_1(1)
         square_2(2)
         square_3(3)
@@ -215,7 +215,7 @@ if Algorithm == 'merge sort':
     time.sleep(2)
 
     for i in range(100):
-        p.fill((255,255,255))
+        screen.fill((255,255,255))
         square_1(1)
         square_2(2)
         square_3(3)
@@ -230,7 +230,7 @@ if Algorithm == 'merge sort':
 
     label = myfont.render('you see the squares are sorted as for the RGB',True,(0,0,0))
 
-    p.blit(label, (100, 200))
+    screen.blit(label, (100, 200))
 
     
 
@@ -238,7 +238,7 @@ if Algorithm == 'merge sort':
 
     label = myfont.render('(Hossein Rezanejad & Ali Sobhani)',True,(0,0,0))
 
-    p.blit(label, (420, 300))
+    screen.blit(label, (420, 300))
 
 
     
@@ -246,7 +246,7 @@ if Algorithm == 'merge sort':
 
     label = myfont.render('** Merge Sort **',True,(0,0,0))
 
-    p.blit(label, (150, 50))
+    screen.blit(label, (150, 50))
 
     
 
@@ -254,7 +254,7 @@ if Algorithm == 'merge sort':
 
     label = myfont.render('Final Project :D',True,(0,0,0))
 
-    p.blit(label, (300, 500))
+    screen.blit(label, (300, 500))
         
         
             
