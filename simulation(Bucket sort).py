@@ -364,6 +364,7 @@ if Algorithm == 'bucket sort':
 
     time.sleep(1)
 
+ 
     R=255
     G=255
     B=255
@@ -425,3 +426,4 @@ if Algorithm == 'bucket sort':
         time.sleep(0.03)
         pygame.display.update()
     
+    time.sleep(5)
