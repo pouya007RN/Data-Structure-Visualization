@@ -671,7 +671,7 @@ if Algorithm == 'heap tree':
     R = 255
     G = 255
     B = 255
-
+    
     for i in range(255):
         screen.fill((255,255,255))
 
@@ -718,7 +718,7 @@ if Algorithm == 'heap tree':
         time.sleep(0.01)                    
         pygame.display.update()
 
-        
+    time.sleep(5) 
 
     
 
